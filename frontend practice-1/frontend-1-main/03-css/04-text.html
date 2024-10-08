@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text | css</title>
+  </head>
+  <body>
+    <h1>css</h1>
+    <h2>text</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati porro perferendis debitis, odio, odit architecto quas laborum hic, dicta alias reiciendis unde reprehenderit expedita aperiam! Repellat perspiciatis laboriosam rem modi.</p>
+
+    <style>
+      p {
+        color: blueviolet;
+        text-align: center;
+      }
+    </style>
+
+    <div>
+      <img src="./images/youtube.png" alt="youtube" />
+      YouTube
+    </div>
+    <style>
+      img {
+        vertical-align: middle;
+        /* >> vam */
+        margin-top: -5px;
+      }
+    </style>
+
+    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere, doloremque vel dolor magnam minima obcaecati dolorum earum alias asperiores.</a>
+    <!-- lorem + 숫자 -->
+    <style>
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: -0.4px;
+        line-height: 1.5;
+        white-space: nowrap;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <hr />
+    <button>
+      <span class="blind">회원가입</span>
+    </button>
+    <style>
+      button {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        text-indent: -9999px;
+        overflow: hidden;
+      }
+      button::before {
+        content: "";
+      }
+    </style>
+  </body>
+</html>
