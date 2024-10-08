@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font | css</title>
+    <style>
+      /* reset */
+      html,
+      body {
+        font-size: 18px;
+        /* 크롬브라우저가 사용하는 기본값 : 16px */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css</h1>
+    <h2>font</h2>
+
+    <!-- font-family : 글꼴 -->
+    <p class="txt1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam saepe ipsa quod minus? Totam qui ratione beatae corporis, placeat iure repellendus deserunt molestiae aspernatur nisi eius ullam officia dolore quisquam?</p>
+    <style>
+      .txt1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
+    <hr />
+    <!-- 폰트 사이즈 -->
+    <!-- 절대 사이즈 : px -->
+    <p class="txt2">Lorem ipsum dolor sit amet.</p>
+    <style>
+      .txt2 {
+        font-size: 20px;
+      }
+    </style>
+    <!-- 상대 사이즈 : rem, em -->
+    <p class="text3">Lorem ipsum dolor sit amet.</p>
+    <style>
+      .text3 {
+        font-size: 20px;
+        /* >> fz */
+        color: purple;
+      }
+    </style>
+
+    <ul class="list1">
+      <li>안녕하세요. 정다연입니다.</li>
+      <li>프론트엔드 공부하고 있어요.</li>
+      <li>난 고양이를 좋아해요.</li>
+      <li>쓸말이 없어요.</li>
+    </ul>
+
+    <style>
+      .list1 li:first-child {
+        font-size: 14px;
+      }
+      .list1 li:nth-child(2) {
+        font-size: 0.875em;
+      }
+      .list1 li:nth-child(3) {
+        font-size: 1.75em;
+      }
+      .list1 li:last-child {
+        font-size: 2em;
+      }
+    </style>
+
+    <!-- em : 부모를 기준으로 배수를 계산 
+     ex) 부모 폰트 사이즈가 20px일 때, 1em = 20px
+         부모 폰트 사이즈가 20px일 때, 2em = 40px-->
+    <!-- rem : html, body 를 기준으로 배수를 계산
+         기준이 변경되지 않는다. -->
+    <!-- em 말고 rem 사용해라. -->
+  </body>
+</html>
